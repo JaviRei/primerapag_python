@@ -1,0 +1,2 @@
+- Siempre se tiene que crear una carpeta que se llame templates que es donde iran almaenados todos los archivos html
+- La carpeta static es para ingresar todos los archivos de estilos
