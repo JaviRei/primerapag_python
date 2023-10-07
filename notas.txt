@@ -1,2 +1,14 @@
 - Siempre se tiene que crear una carpeta que se llame templates que es donde iran almaenados todos los archivos html
 - La carpeta static es para ingresar todos los archivos de estilos
+
+Mover linea - Alt + ↑ / ↓
+Copiar linea - Shift + Alt + ↑ / ↓
+Seleccionar siguiente aparición - Ctrl + D
+Seleccionar todas las apariciones - Ctrl + Shift + L
+Crear múltiples cursores - Ctrl + Alt+ ↑ / ↓
+Selección multiple - Alt + Click
+Mover bloque - Seleccionar . Alt + ↑ / ↓
+Copiar bloque - Seleccionar . Shift + Alt + ↑ / ↓
+Comentar linea - Ctrl + \ || esp(Ctrl + Shift + 7)
+Comentar seleccion - Seleccionar . Shift + Alt + A
+Borrar linea seleccionada - Ctrl + Shift + K

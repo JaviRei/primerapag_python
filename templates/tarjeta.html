@@ -1,0 +1,24 @@
+{%extends "layout.html"%}
+
+{% block content %}
+
+<main class="container">
+  <section class="card"> <!--Esto creara la sección de la tarjeta-->
+    <div class="product_image">
+      <img id="card_img" src="/static/assets/tenis.png" alt="">
+    </div>
+    <div class="product_info">
+      <h2>Nike X Force Zero</h2>
+      <p>The number 1 in the world  50% Off - New York</p>
+      <div class="price">$699</div>
+      <div class="btnn">
+        <button class="buy-btn">Buy Now</button>
+        <button class="fav"><!--Importamos elicono desde Boxicon, agregando la libreira al template-->
+          <i class='bx bx-cart'></i>
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock %}

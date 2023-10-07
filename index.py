@@ -13,9 +13,9 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/about')
+@app.route('/tarjeta')
 def about():
-    return render_template('about.html')
+    return render_template('tarjeta.html')
 
 
 # Esta sentencia hace que siempre se este ejecuntando todo el tiempo

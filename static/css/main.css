@@ -1,7 +1,128 @@
-#bbody {
-    background-color: #354f52;
-}
+
 
 #navB {
     background-color: #2f3e46;
+} 
+
+/*Importamos la tipografia desde google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap');
+
+/*Variables CSS*/
+:root{
+    /*las variables en css se crean agregando 2 guiones al principio --nombre_variable*/
+    --dark-color-lighten: #eaeaea;
+    /* --red-card: #2f3e46; */
+    --red-card: #a3b18a;
+    --btn: #141414;
+    --btn-hover: #3a3a3a;
+    --text: #ffffff;
+    --bttn: #141414;
+
+}
+
+/*=== RESET ===*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+button{
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    color: var(--bttn);
+    cursor: pointer;
+}
+
+#card_img{
+    max-width: 100%;
+    height: 100%;
+}
+
+/*=== CARD ===*/
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        background-color: var(--red-card);
+        width: 400px;
+        padding: 1rem; /* 1 rem equivale a 16 px*/
+        box-shadow: 0px 21px 22px -12px rgba(0,0,0,0.56);
+        border-radius: 0.9rem;
+        color: var(--text);
+        cursor: pointer;
+
+        .product_image{
+            padding-top: 1rem;
+            transform: translate(0, -1.5rem);
+            transition: 0.5s ease-in-out;
+            filter: drop-shadow(5px 10px 15px rgb(8,9,13,0.4) );
+            
+        }
+        &:hover{ /*Este hover nos ayuda a que la animación se active en cualquier punto de la tarjeta*/
+            .product_image{
+                transform: translate(-1.5rem,-7rem) rotate(20deg);
+            }
+        }
+
+        .product_info{
+            text-align: center;
+            & h2{
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            & p {
+                margin: 0.4rem;
+                font-size: 1rem;
+                font-weight: 300;
+                color: #141414;
+            }
+            .price {
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+        }
+        .btnn{
+            display: flex;
+            justify-content: space-evenly;/*space-evenly hace que los items se vayan a los extremos*/
+            align-items: center;
+            margin-top: 0.8rem;
+            
+
+            .buy-btn{
+                background-color: var(--btn);
+                padding: 0.6rem 3.5rem;
+                border-radius: 0.5rem;
+                font-size: 1rem;
+                color: #fff;
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: var(--btn-hover);
+                }
+            }
+
+            .fav{
+                background: #fff;
+                padding: .5rem .5rem;
+                border: 1px solid#000;
+                display: grid;
+                place-items: center;
+                font-size: 30px;
+                
+            }
+        }
+    }
 }
